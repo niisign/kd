@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+
+        <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBDh8eKC6TFVFfhrSeT93vsLqabwe5tlVI",
+            authDomain: "test-kd.firebaseapp.com",
+            databaseURL: "https://test-kd.firebaseio.com",
+            storageBucket: "test-kd.appspot.com",
+            messagingSenderId: "596813728622"
+        };
+
+        // var config = {
+        //     apiKey: "AIzaSyBut0WQPBZookdeKbROcwYC-d7JvvkA0Yw",
+        //     authDomain: "kdining-4667e.firebaseapp.com",
+        //     databaseURL: "https://kdining-4667e.firebaseio.com",
+        //     // storageBucket: "kdining-4667e.appspot.com",
+        //     messagingSenderId: "609137528816"
+        // };
+
+        firebase.initializeApp(config);
+        let auth = firebase.auth( ).onAuthStateChanged( user => {
+            if ( !user ) {
+                window.location = 'http://kd.sigconert.com/test/pages/login.html';
+            }
+        });
+        </script>
+</head>
+
+<body class="grey lighten-4">
+
+
+    <!-- start nav bar -->
+    <div id="navigation" class="row">
+
+    </div>
+    <!-- end nav bar -->
+
+    <!-- Start Content Place Holder -->
+    <div class="row">
+
+        <!-- Start Cards container -->
+        <div class="col s12 l10 offset-l1 animated" id="dynamic">
+
+            <div id="dashboard" class="">
+
+            </div>
+
+
+        </div>
+        <!-- End Cards Container -->
+
+    </div>
+    <div id="extra">
+
+    </div>
+  </div>
+
+    </div>
+
+    <!-- End Content Place Holder -->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="./js/jquery-ui-1.9.2.custom.min.js" charset="utf-8"></script>
+    <script src="./js/loader.js" charset="utf-8"></script>
+    <script src="./js/sessions.js" charset="utf-8"></script>
+    <script src="./js/pdfmake.min.js" charset="utf-8"></script>
+    <script src="./js/vfs_fonts.js" charset="utf-8"></script>
+    <script src="./js/functions.js" charset="utf-8"></script>
+    <script src="./js/wow.min.js" charset="utf-8"></script>
+    <script src="./js/template.js" charset="utf-8"></script>
+    <script src="./js/index.js" charset="utf-8"></script>
+</body>
+</html>

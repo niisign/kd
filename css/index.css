@@ -1,0 +1,94 @@
+.thumbs{
+    min-height: 500px
+}
+
+table tr td{
+    height: 20px
+}
+
+.item-name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.items-name{
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.items-card{
+    height: 120px;
+}
+
+.item-count{
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.item-cost{
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.item-unit{
+    font-size: 0.8em
+}
+
+.left-pad{
+    padding-left: 20px
+}
+
+.right-pad{
+    padding-right: 20px
+}
+
+.bottom-pad{
+    padding-right: 20px
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.glance{
+    height: 200px
+}
+
+.content-box{
+    height: 210px;
+}
+
+.dash-title{
+    font-size: 2.0em;
+}
+
+.dash-info{
+    font-size: 1.5em;
+}
+
+.dash-icons{
+    font-size: 1.5em;
+}
+
+.hold-dash-info{
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 70px;
+}
+
+.hold-dash-info > i {
+    margin-top: 5px;
+}
